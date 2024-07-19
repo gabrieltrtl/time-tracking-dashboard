@@ -54,6 +54,7 @@ body {
 .main__profile {
   background-color: #1C204B;
   border-radius: 15px;
+  margin-bottom: 62px;
 }
 
 .profile__header {
@@ -70,6 +71,12 @@ body {
   border-radius: 50%;
 }
 
+.profile__intro {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
 .profile__name {
   font-weight: 300;
   font-size: 1.5rem;
@@ -80,8 +87,25 @@ body {
   color: #BBC0FF;
 }
 
+.profile__time {
+  display: flex;
+  padding: 24px 0;
+  justify-content: space-evenly;
+}
+.profile__time p {
+  font-size: 1.125rem;
+  color: #7078C9;
+}
+
 .list__item {
   position: relative;
+  background-color: #1C204B;
+  border-radius: 15px;
+  padding: 28px 24px;
+}
+
+.list__item:not(:last-child) {
+  margin-bottom: 62px;
 }
 
 .background {

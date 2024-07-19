@@ -46,6 +46,7 @@ body {
 .main__profile {
   background-color: $color2;
   border-radius: 15px;
+  margin-bottom: 62px;
 }
 
 .profile__header {
@@ -62,6 +63,12 @@ body {
   }
 }
 
+.profile__intro {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
 .profile__name {
   font-weight: 300;
   font-size: map-get($fonts, "$medium");
@@ -72,8 +79,25 @@ body {
   color: $color4;
 }
 
+.profile__time {
+  display: flex;
+  padding: 24px 0;
+  justify-content: space-evenly;
+  p {
+    font-size: map-get($fonts, "$small2");
+    color: $color5;
+  }
+}
+
 .list__item {
   position: relative;
+  background-color: $color2;
+  border-radius: 15px;
+  padding: 28px 24px;
+}
+
+.list__item:not(:last-child) {
+  margin-bottom: 62px;
 }
 
 
