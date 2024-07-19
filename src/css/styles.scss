@@ -85,9 +85,14 @@ body {
   display: flex;
   padding: 24px 0;
   justify-content: space-evenly;
-  p {
+  button {
     font-size: map-get($fonts, "$small2");
     color: $color5;
+    background: none;
+    &:hover {
+      color: $neutral-color-1;
+      cursor: pointer;
+    }
   }
 }
 

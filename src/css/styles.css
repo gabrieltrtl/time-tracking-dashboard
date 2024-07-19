@@ -94,9 +94,14 @@ body {
   padding: 24px 0;
   justify-content: space-evenly;
 }
-.profile__time p {
+.profile__time button {
   font-size: 1.125rem;
   color: #7078C9;
+  background: none;
+}
+.profile__time button:hover {
+  color: #FFFFFF;
+  cursor: pointer;
 }
 
 .list__item {
