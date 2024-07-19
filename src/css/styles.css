@@ -103,6 +103,47 @@ body {
   border-radius: 15px;
   padding: 28px 24px;
 }
+.list__item::before {
+  content: "";
+  position: absolute;
+  height: 160px;
+  top: -45px;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  border-radius: 15px;
+  background-image: url(../../images/icon-self-care.svg);
+  background-repeat: no-repeat;
+  background-position: top -10px right 17px;
+  background-size: 72px 66px;
+}
+.list__item.work::before {
+  background-color: #FF8B64;
+  background-image: url(../../images/icon-work.svg);
+  background-repeat: no-repeat;
+  background-position: top -10px right 17px;
+  background-size: 72px 66px;
+}
+.list__item.play::before {
+  background-color: #55C2E6;
+  background-image: url(../../images/icon-play.svg);
+}
+.list__item.study::before {
+  background-color: #FF5E7D;
+  background-image: url(../../images/icon-study.svg);
+}
+.list__item.exercise::before {
+  background-color: #4BCF82;
+  background-image: url(../../images/icon-exercise.svg);
+}
+.list__item.social::before {
+  background-color: #7335D2;
+  background-image: url(../../images/icon-social.svg);
+}
+.list__item.self-care::before {
+  background-color: #F1C75B;
+  background-image: url(../../images/icon-self-care.svg);
+}
 
 .list__item:not(:last-child) {
   margin-bottom: 62px;
