@@ -49,6 +49,8 @@ body {
 
 .container__main {
   padding: 5.0625rem 1.5rem;
+  max-width: 548px;
+  margin: 0 auto;
 }
 
 .main__profile {
@@ -106,7 +108,7 @@ body {
 .list__item::before {
   content: "";
   position: absolute;
-  height: 160px;
+  height: 100px;
   top: -45px;
   left: 0;
   right: 0;
@@ -120,9 +122,6 @@ body {
 .list__item.work::before {
   background-color: #FF8B64;
   background-image: url(../../images/icon-work.svg);
-  background-repeat: no-repeat;
-  background-position: top -10px right 17px;
-  background-size: 72px 66px;
 }
 .list__item.play::before {
   background-color: #55C2E6;
@@ -149,10 +148,28 @@ body {
   margin-bottom: 62px;
 }
 
-.background {
-  background-color: #FF8B64;
-  width: 100%;
+.item__heading,
+.item__count {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.background img {
-  margin-left: auto;
+
+.item__heading {
+  margin-bottom: 7px;
+}
+
+.item__title {
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.current-count {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.past-count {
+  color: #BBC0FF;
+  font-size: 0.9375rem;
 }/*# sourceMappingURL=styles.css.map */
