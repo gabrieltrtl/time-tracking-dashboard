@@ -43,6 +43,11 @@ body {
   padding: 5.0625rem 1.5rem;
   max-width: 548px;
   margin: 0 auto;
+  display: grid;
+  @include device(desktop) {
+    max-width: 1110px;
+    grid-template-columns: auto 1fr;
+  }
 }
 
 .main__profile {
@@ -50,6 +55,7 @@ body {
   border-radius: 15px;
   margin-bottom: 62px;
 }
+
 
 .profile__header {
   display: flex;
@@ -93,6 +99,15 @@ body {
       color: $neutral-color-1;
       cursor: pointer;
     }
+  }
+}
+
+.list {
+  @include device(desktop) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 45px;
+    gap: 75px 30px;
   }
 }
 
@@ -143,6 +158,9 @@ body {
 
 .list__item:not(:last-child) {
   margin-bottom: 62px;
+  @include device(desktop) {
+    margin-bottom: initial;
+  }
 }
 
 .item__heading,

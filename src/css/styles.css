@@ -51,6 +51,13 @@ body {
   padding: 5.0625rem 1.5rem;
   max-width: 548px;
   margin: 0 auto;
+  display: grid;
+}
+@media (min-width: 75rem) {
+  .container__main {
+    max-width: 1110px;
+    grid-template-columns: auto 1fr;
+  }
 }
 
 .main__profile {
@@ -104,6 +111,15 @@ body {
   cursor: pointer;
 }
 
+@media (min-width: 75rem) {
+  .list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 45px;
+    gap: 75px 30px;
+  }
+}
+
 .list__item {
   position: relative;
   background-color: #1C204B;
@@ -151,6 +167,11 @@ body {
 
 .list__item:not(:last-child) {
   margin-bottom: 62px;
+}
+@media (min-width: 75rem) {
+  .list__item:not(:last-child) {
+    margin-bottom: initial;
+  }
 }
 
 .item__heading,
