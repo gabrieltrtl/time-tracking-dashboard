@@ -41,7 +41,7 @@ function updateUI(data, timeframe) {
     
     listItem.querySelector('.item__title').textContent = itemData.title;
 
-    listItem.querySelector('.current-count').textContent = `Current: ${itemData.timeframes[timeframe].current}hrs`;
+    listItem.querySelector('.current-count').textContent = `${itemData.timeframes[timeframe].current}hrs`;
     listItem.querySelector('.past-count').textContent = `${pastText} - ${itemData.timeframes[timeframe].previous}hrs`;
   });
 }
